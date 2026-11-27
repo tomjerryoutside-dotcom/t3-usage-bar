@@ -1,0 +1,9 @@
+.DS_Store
+/dist/
+__pycache__/
+*.pyc
+*.app/
+*.zip
+local-config.js
+verified-plan.json
+google-one-sync.key

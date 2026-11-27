@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "T3 用量 · Google One",
+  "version": "1.0.2",
+  "description": "读取 Google One 当前方案，并同步给这台 Mac 的 T3 用量。",
+  "permissions": ["alarms", "scripting"],
+  "host_permissions": ["https://one.google.com/*", "http://127.0.0.1/*"],
+  "background": {
+    "service_worker": "sync.js",
+    "type": "module"
+  },
+  "action": {
+    "default_title": "刷新 Google One 套餐"
+  }
+}
