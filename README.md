@@ -90,3 +90,7 @@ python3 scripts/setup-google.py --chrome
 ```
 
 `dist` 中会生成 `.app`、通用 ZIP 和 SHA-256 校验文件。
+
+## 许可证
+
+源码和发布包采用 [MIT 许可证](LICENSE)。可以使用、修改和再分发，保留版权声明与许可文本即可。

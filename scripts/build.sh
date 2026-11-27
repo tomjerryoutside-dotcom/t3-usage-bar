@@ -19,8 +19,9 @@ done
 build_dir="$(mktemp -d "$destination/.build.XXXXXX")"
 trap 'rm -rf "$build_dir"' EXIT
 app="$build_dir/$app_name"
-mkdir -p "$app/Contents/MacOS"
+mkdir -p "$app/Contents/MacOS" "$app/Contents/Resources"
 install -m 644 "$repo/Resources/Info.plist" "$app/Contents/Info.plist"
+install -m 644 "$repo/LICENSE" "$app/Contents/Resources/LICENSE"
 
 for arch in arm64 x86_64; do
     /usr/bin/xcrun --sdk macosx swiftc -parse-as-library -O \
